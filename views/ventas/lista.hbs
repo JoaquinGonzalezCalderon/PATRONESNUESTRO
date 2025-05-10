@@ -1,0 +1,12 @@
+<h2>Ventas registradas</h2>
+<ul>
+    {{#each ventas}}
+    <li>
+        Fecha: {{this.fecha}} <br />
+        Total: ${{this.total}} <br />
+        Forma de pago: {{this.formaPago}}
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/ventas/nueva">Registrar otra venta</a>
