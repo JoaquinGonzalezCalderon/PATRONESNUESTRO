@@ -38,7 +38,7 @@ const Reporte = require('./models/reporte');
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
 
-    console.log('🚀 Servidor corriendo en http://localhost:${PORT}');
+    console.log('🚀 Servidor corriendo en http://localhost:8000');
   });
 }).catch((err) => {
   console.error('❌ Error al sincronizar la base de datos:', err);
